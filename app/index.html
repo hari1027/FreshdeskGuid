@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <!-- <script type="text/javascript" src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script> -->
+  <script src="{{{appclient}}}"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <label for="phoneNumber" id="phoneText" class="PhoneNumberText">Enter a PhoneNumber to Search Tickets</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" class="phoneNumberField">
+    <label id="validationText" hidden class="validationText">PhoneNumber should be 10 numbers starting with 6,7,8 or
+      9</label>
+    <button id="saveButton" class="button">Search</button>
+    <label id="noContactText" hidden class="noContactText">Contact does not exist's</label>
+    <label id="noTicketText" hidden class="noTicketText">No Ticket available with this Contact</label>
+
+    <div id="parent" hidden></div>
+  </div>
+  <script defer src="scripts/app.js"></script>
+</body>
+
+</html>

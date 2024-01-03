@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.PhoneNumberText {
+  font-weight: bold;
+}
+
+.phoneNumberField {
+  margin-top: 8px;
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #ccc !important;
+  width: 15%;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  outline: none;
+  font-size: small;
+}
+
+.button {
+  margin-top: 12px;
+  background-color: #4CAF50;
+  color: #000000;
+  border: transparent;
+  border-radius: 8px;
+  width: 80px;
+  height: 30px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.noContactText {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.noTicketText {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  column-gap: 100px;
+  cursor: pointer;
+}
+
+.overDue {
+  color: #c82124;
+  background-color: #ffecf0;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: 1px solid #ffd0d6;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.new {
+  color: #007958;
+  background-color: #e0f5f0;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: 1px solid #b4e5d9;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.subject {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.information {
+  color: #6f7c87;
+  font-weight: 50;
+  font-size: small;
+}
+
+.low {
+  color: #008000;
+}
+
+.medium {
+  color: #0000FF;
+}
+
+.high {
+  color: #FFFF00;
+}
+
+.urgent {
+  color: #FF0000;
+}
+
+.grid2FontWeights {
+  font-weight: 400;
+}
+
+.tooltipcss {
+  visibility: hidden;
+  width: fit-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: small;
+
+  position: absolute;
+  margin-top: -20px;
+}
+
+.tooltipcssWidthPrio {
+  margin-left: -55px;
+}
+
+.tooltipcssWidthSourceStatus {
+  margin-left: -45px;
+}
+
+.grid2FontWeights:hover .tooltipcss {
+  visibility: visible !important;
+}
+
+.validationText {
+  color: #FF0000;
+  margin-top: 5px;
+}

@@ -1,0 +1,27 @@
+{
+    "searchContact": {
+        "schema": {
+            "method": "GET",
+            "host": "<%= iparam.domain %>.freshdesk.com",
+            "path": "/api/v2/search/contacts",
+            "headers": {
+                "Authorization": "Basic <%= encode(iparam.api_key) %>",
+                "Content-Type": "application/json"
+            },
+            "query": {
+                "query": "<%= context.query %>"
+            }
+        }
+    },
+    "getTicket": {
+        "schema": {
+            "method": "GET",
+            "host": "<%= iparam.domain %>.freshdesk.com",
+            "path": "/api/v2/tickets/<%= context.id %>",
+            "headers": {
+                "Authorization": "Basic <%= encode(iparam.api_key) %>",
+                "Content-Type": "application/json"
+            }
+        }
+    }
+}
